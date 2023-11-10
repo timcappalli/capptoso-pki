@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Capptoso</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <link rel="icon" href="favicon.ico"/>
+      <style>
+         body {
+         background-color: #F5F5F5;
+         background: linear-gradient(270deg, #E8E8E8, #FFFFFF); /* edit these two colors to change background gradient */
+         background-size: 400% 400%;
+         -webkit-animation: gradientBG 30s ease infinite; /* comment animation lines if using rotating background photos */
+         -moz-animation: gradientBG 30s ease infinite; /* comment animation lines if using rotating background photos */
+         -o-animation: gradientBG 30s ease infinite; /* comment animation lines if using rotating background photos */
+         animation: gradientBG 30s ease infinite; /* comment animation lines if using rotating background photos */
+         }
+         body, html{
+         font-family:Arial,Helvetica,sans-serif;
+         height: 95%;
+         color: #FFF;
+         font-size: 14px;
+         }
+         .box {
+         float: left;
+         }
+         #root { max-width: 420px; margin: 0 auto;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 100%;
+         flex-direction: column;
+         }
+         #box1 {
+         width: 100%;
+         text-align: center;
+         padding-top: 20px;
+         }
+         #box2 {
+         width: 100%;
+         text-align: center;
+         padding-bottom: 20px;
+         border-bottom-right-radius: 12px;
+         border-bottom-left-radius: 12px;
+         }
+         #box3 {
+         width: 100%;
+         text-align: center;
+         }
+         #box4 {
+         width: 100%;
+         text-align: center;
+         }
+         #logo {
+         max-width: 100%;
+         padding: 10px;
+         }
+         /* Laptop/Tablet (1024px) */
+         @media only screen and (min-width: 481px) and (max-width: 880px) and (orientation: landscape) {
+         #box1 { width: 100%; }
+         #box2 { width: 100%; }
+         #box3 { width: 100%; }
+         #box4 { width: 100%; }
+         }
+         /* Tablet Portrait (768px) */
+         @media only screen and (min-width: 321px) and (max-width: 880px) and (orientation: portrait) {
+         #box1 { width: 100%; }
+         }
+         /* Phone Landscape (480px) */
+         @media only screen and (min-width: 321px) and (max-width: 480px) and (orientation: landscape) {
+         #box1 { width: 100%; }
+         }
+         /* Phone Portrait (320px) */
+         @media only screen and (max-width: 320px) {
+         #box1 { width: 100%; }
+         }
+         img {
+         max-width: 100%;
+         }
+         /* BUTTON STYLING */
+         button, input[type=submit] {
+         -webkit-appearance: none;
+         -webkit-border-radius: 0;
+         background-color: #FF8300;
+         border: none;
+         color: #FFF;
+         cursor: pointer;
+         font-size: 14px;
+         line-height: normal;
+         padding: 8px 25px;
+         text-decoration: none;
+         text-transform: uppercase;
+         width: 94%;
+         max-width: 320px;
+         font-size: 14px;
+         }
+         button.disabled, button[disabled], button[disabled="disabled"], input[type="submit"]:disabled, input[type="button"]:disabled {
+         opacity: 1 !important;
+         cursor: inherit !important;
+         }
+         /* Phone Portrait (320px) */
+         @media only screen and max-width 320px {
+         button,input[type=submit],select,textarea,input[type=text],input[type=password],input[type=datetime],input[type=datetime-local],input[type=date],input[type=month],input[type=time],input[type=week],input[type=number],input[type=email],input[type=url],input[type=search],input[type=tel],input[type=color],.uneditable-input
+         {
+         width:80%!important;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <div id='root'>
+         <div class='box' id='box1'>
+            <img src="capptoso_stacked_positive.svg" onerror="this.src='capptoso_stacked_positive_high.png'; this.onerror=null;" alt="Capptoso Logo" id="logo">
+         </div>
+      </div>
+   </body>
+</html>
