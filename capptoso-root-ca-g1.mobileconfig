@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadCertificateFileName</key>
+			<string>capptoso-root-ca-g1.crt</string>
+			<key>PayloadContent</key>
+			<data>
+			LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZSRENDQXl5
+			Z0F3SUJBZ0lJRVdTdzlnTWNjNEF3RFFZSktvWklodmNOQVFFTUJR
+			QXdRREVMTUFrR0ExVUUKQmhNQ1ZWTXhFVEFQQmdOVkJBb1RDRU5o
+			Y0hCMGIzTnZNUjR3SEFZRFZRUURFeFZEWVhCd2RHOXpieUJTYjI5
+			MApJRU5CSUMwZ1J6RXdIaGNOTWpBd016STJNREUxTURBd1doY05O
+			REF3TXpJMk1ERTFNREF3V2pCQU1Rc3dDUVlEClZRUUdFd0pWVXpF
+			Uk1BOEdBMVVFQ2hNSVEyRndjSFJ2YzI4eEhqQWNCZ05WQkFNVEZV
+			TmhjSEIwYjNOdklGSnYKYjNRZ1EwRWdMU0JITVRDQ0FpSXdEUVlK
+			S29aSWh2Y05BUUVCQlFBRGdnSVBBRENDQWdvQ2dnSUJBTHJTakhJ
+			UgpndWlBNzVhcE4rU3RxK3c3ckFnckRKakxPZ21WcjlJNHdoNU4v
+			Um8vbDBUL3ROTkU1QkdReldOUGxSWnlJV0NTCjZ6d2l3MklDdG5p
+			cEwzTDB6MmdWUmtxRXdWNWFoS3lQY0hDSlZUREZFOXo3TE5SSEhF
+			Q2dmVzVQLysvbGk1dDYKZXZJN3VpRFBUbW1rZXJ1OFozalJlZ1Ni
+			SmxzanhMYXdzeFMvb3ZYcC9ZeFpUS2trNXFWODc0M0EwM1g4VEpH
+			VQpIRGgvZDQ3dnlsQk9JZzJnVDF6R3IvRkxNbHNCbU5ZS05CdjVr
+			TTdrSVBTeDJGRHlSSGdIUVNXMXpoUWdjQmEzCm9ndExlajhYd1JC
+			T0lQbEVkN3VJWjFQVUMrdjRRSk9DOU5XaGJyeitlUS9KdWlsVU1w
+			RDJiOHA2T0Fpc0tnQ3QKM1ZYRnBPNE12aU9nRmhBeFRnTS9wWTVC
+			VFBtd2YyeVgvR1BHQkFXM2dJMkRINGQreUVvRWlvRlB5QkRSdzRK
+			NQpZSE5uK2FRSnVvYlBPVkJCdmFTbTdqSURtQnQydXJrTS9PbXJj
+			SXBQL0Y3bUh2bHZmQWYrNEM4ZXA2Qi8xMHJzCk9oekQzWmhHeWha
+			MVhVYWprbGhpMHhhK2VhSFhZeXhHZEhUZXRJVmIrR08za1BsdXdN
+			K3h2NHRYRm1yR0dQQ0cKM1FSN1JkRTRKUXBMclBVSUlwTUJUWkU0
+			UkFrSVJKam5ZVXMvZWoxSitVQURLRDkzUGtyWmRjQ3NGU2tleUlO
+			dApiam81MlF3LzUycmpmS0dSV0NrNkVNRkxzbUlydHJhN0dsMWlp
+			UVVUczQxNDh4YTQwTTFDakk5S08rd3NyeFNJClloNVBULytyb2ZH
+			RzRBWiszTnh1eE1Fb0VVTWtNZlR6blpjSEFnTUJBQUdqUWpCQU1B
+			OEdBMVVkRXdFQi93UUYKTUFNQkFmOHdIUVlEVlIwT0JCWUVGRHdw
+			SFcxQnpLMWdLUnF3cHdYN1lqb0l4LzdoTUE0R0ExVWREd0VCL3dR
+			RQpBd0lCQmpBTkJna3Foa2lHOXcwQkFRd0ZBQU9DQWdFQVl0eXhR
+			cWJaUDlFNGZKblNlTUdoVUFESUN4cldQQ1VlCjU3ZEFiNDY4cWJJ
+			amNqZlBnREl0cC9GWlUweTNjdWNzdHU1U2hzS2JYZ1doc2JzZk9m
+			cDlMcVA2VlVXUzFsWisKL2FkclA0d0xCcjl0cnhRb28zb0VGU08x
+			RGc5ZWNWRUd4UFdTMTlWMitTSjE0bWNsSEZaZHZYODRJSTk2Nmk1
+			SQpqMGJ1bVA5bnFONGpaR3BweHg5eDFUdEVoZFdIQm5pWEd3b29l
+			VitjNUxPSGRYTE5FYkswSDRsTWYrQW5SZE5PCnNPN0JDemI0ZjBM
+			VGhGZ1N4eTlMbEs0aEl5TEExSDczc0N0SG41Q1RxRHRqOHNsZVVT
+			MjNWM0NtYmxwbURZVE8KTWZsSDZOMHpqZ2tyRDg4b2FLU1VFVFJF
+			azduNUwxRFNZcHBIQWlBM0hhYTJBRmQvRU44T3lPOTllZW1HN3g1
+			egpIb0pkbEVBQWhDMjFVK2JmWHhBLzhrdVRXb3NLZ3o3bnN6OWQy
+			L0E0UGJUTEt5QXQ5T2d4VzdaNW5WK2trL0EyCldmVWlkZTR6OU5i
+			a1Y2N3dXZVJKRXgxbjAvYS8rU2FuaTArZE5HbVBhZXlwaCtDTHJo
+			NzJwckdCNVJyaWF0REUKb1lWYi9HVTFFNWN2K1RZYzRxZitDOC9l
+			Rk5KY0dlcWFBVHNIOVIwUWxRMDM2OC9VQndBY0t2QzV3cWx3SlhB
+			bgpaUWRGQTU4Wk9SbCs3ZmJ2bDQ4SXBQTmp6TmRrRnM2U0VXeVlH
+			cnVDaWs0RittT1UvSHNIYll4TkEyK25USFovClYwZ3Nnd1FlSzRs
+			enQraEJWdVB5Ymo5dDRIY2NNSDR4RCtBVExabGxhWllGVEM4NURV
+			bExsYzUwenVKak9DbmEKUVI3OStsc1l3TXM9Ci0tLS0tRU5EIENF
+			UlRJRklDQVRFLS0tLS0K
+			</data>
+			<key>PayloadDescription</key>
+			<string>Adds a CA root certificate</string>
+			<key>PayloadDisplayName</key>
+			<string>Capptoso Root CA - G1</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.security.root.0317DB3C-5D98-434D-8463-DC348100C99F</string>
+			<key>PayloadType</key>
+			<string>com.apple.security.root</string>
+			<key>PayloadUUID</key>
+			<string>0317DB3C-5D98-434D-8463-DC348100C99F</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>Capptoso Root CA - G1</string>
+	<key>PayloadIdentifier</key>
+	<string>com.capptoso.pki.root.g1</string>
+	<key>PayloadOrganization</key>
+	<string>Capptoso</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>F5A4AE6B-C515-4CB9-A171-AEAD2CA7F1CE</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
