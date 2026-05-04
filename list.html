@@ -204,14 +204,14 @@
         <div class="cert-list">
             <!-- Item 1 -->
             <div class="cert-item">
-                <div class="cert-header" data-bs-toggle="collapse" data-bs-target="#cert1" aria-expanded="false" aria-controls="cert1">
+                <div class="cert-header" role="button" tabindex="0" aria-expanded="false" aria-controls="cert1">
                     <div class="cert-main-info">
                         <div class="cert-name">Capptoso Root CA - G1</div>
                         <div class="cert-type">Root</div>
                     </div>
                     <div class="cert-download">
-                        <div><a href="http://pki.capptoso.com/capptoso-root-ca-g1.crt" target="_blank">PEM (.crt)</a></div>
-                        <div><a href="http://pki.capptoso.com/capptoso-root-ca-g1.mobileconfig" target="_blank">Apple Profile (.mobileconfig)</a></div>
+                        <div><a href="https://pki.capptoso.com/capptoso-root-ca-g1.crt" target="_blank">PEM (.crt)</a></div>
+                        <div><a href="https://pki.capptoso.com/capptoso-root-ca-g1.mobileconfig" target="_blank">Apple Profile (.mobileconfig)</a></div>
                     </div>
                     <div class="cert-toggle-icon"><i class="bi bi-chevron-down"></i></div>
                 </div>
@@ -225,13 +225,13 @@
             </div>
             <!-- Item 2 -->
             <div class="cert-item">
-                <div class="cert-header" data-bs-toggle="collapse" data-bs-target="#cert2" aria-expanded="false" aria-controls="cert2">
+                <div class="cert-header" role="button" tabindex="0" aria-expanded="false" aria-controls="cert2">
                     <div class="cert-main-info">
                         <div class="cert-name cert-name-indented">Capptoso Server RSA CA - G1</div>
                         <div class="cert-type cert-type-indented">Intermediate</div>
                     </div>
                     <div class="cert-download">
-                        <a href="http://pki.capptoso.com/capptoso-server-rsa-ca-g1.crt" target="_blank">PEM (.crt)</a>
+                        <a href="https://pki.capptoso.com/capptoso-server-rsa-ca-g1.crt" target="_blank">PEM (.crt)</a>
                     </div>
                     <div class="cert-toggle-icon"><i class="bi bi-chevron-down"></i></div>
                 </div>
@@ -245,13 +245,13 @@
             </div>
             <!-- Item 3 -->
             <div class="cert-item">
-                <div class="cert-header" data-bs-toggle="collapse" data-bs-target="#cert3" aria-expanded="false" aria-controls="cert3">
+                <div class="cert-header" role="button" tabindex="0" aria-expanded="false" aria-controls="cert3">
                     <div class="cert-main-info">
                         <div class="cert-name cert-name-indented">Capptoso Unmanaged Device RSA CA - G1</div>
                         <div class="cert-type cert-type-indented">Intermediate</div>
                     </div>
                     <div class="cert-download">
-                        <a href="http://pki.capptoso.com/capptoso-unmanaged-device-rsa-ca-g1.crt" target="_blank">PEM (.crt)</a>
+                        <a href="https://pki.capptoso.com/capptoso-unmanaged-device-rsa-ca-g1.crt" target="_blank">PEM (.crt)</a>
                     </div>
                     <div class="cert-toggle-icon"><i class="bi bi-chevron-down"></i></div>
                 </div>
@@ -265,13 +265,13 @@
             </div>
             <!-- Item 4 -->
             <div class="cert-item">
-                <div class="cert-header" data-bs-toggle="collapse" data-bs-target="#cert4" aria-expanded="false" aria-controls="cert4">
+                <div class="cert-header" role="button" tabindex="0" aria-expanded="false" aria-controls="cert4">
                     <div class="cert-main-info">
                         <div class="cert-name">Capptoso Docker EC CA - G1</div>
                         <div class="cert-type">Root</div>
                     </div>
                     <div class="cert-download">
-                        <a href="http://pki.capptoso.com/capptoso-docker-ca-g1.crt" target="_blank">PEM (.crt)</a>
+                        <a href="https://pki.capptoso.com/capptoso-docker-ca-g1.crt" target="_blank">PEM (.crt)</a>
                     </div>
                     <div class="cert-toggle-icon"><i class="bi bi-chevron-down"></i></div>
                 </div>
@@ -288,11 +288,51 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Script to prevent collapse on link click -->
+    <!-- Script to toggle certificate details while leaving download links alone -->
     <script>
-        document.querySelectorAll('.cert-download a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.stopPropagation();
+        document.querySelectorAll('.cert-header').forEach(header => {
+            const collapseId = header.getAttribute('aria-controls');
+            const collapseElement = document.getElementById(collapseId);
+
+            if (!collapseElement) {
+                return;
+            }
+
+            const collapse = bootstrap.Collapse.getOrCreateInstance(collapseElement, {
+                toggle: false
+            });
+
+            const toggleCollapse = () => {
+                collapse.toggle();
+            };
+
+            header.addEventListener('click', function(e) {
+                if (e.target.closest('.cert-download')) {
+                    return;
+                }
+
+                toggleCollapse();
+            });
+
+            header.addEventListener('keydown', function(e) {
+                if (e.key !== 'Enter' && e.key !== ' ') {
+                    return;
+                }
+
+                if (e.target.closest('.cert-download')) {
+                    return;
+                }
+
+                e.preventDefault();
+                toggleCollapse();
+            });
+
+            collapseElement.addEventListener('shown.bs.collapse', function() {
+                header.setAttribute('aria-expanded', 'true');
+            });
+
+            collapseElement.addEventListener('hidden.bs.collapse', function() {
+                header.setAttribute('aria-expanded', 'false');
             });
         });
     </script>
